@@ -7,8 +7,12 @@
         "id": "3f660942464065e8",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "deshi/deshi io/deshi IO.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "deshi/deshi io/deshi IO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,6 +89,8 @@
   },
   "active": "3f660942464065e8",
   "lastOpenFiles": [
+    "deshi/deshi io/deshi IO.md",
+    "deshi/deshi memory/deshi Memory.md",
     "completed TODOs.md",
     "deshi/deshi time/deshi Time.md",
     "deshi/deshi command/deshi Command.md",
@@ -91,8 +98,6 @@
     "deshi/deshi window/TODO-make the transparent framebuffer a start switch since it hurts frames (it must be set at window creation time).md",
     "deshi/deshi window/deshi Window.md",
     "deshi/deshi window/TODO-add the ability to limit framerate.md",
-    "suugu.md",
-    "deshi/deshi's modules.md",
-    "deshi/deshi ui/TODO-add a UI popup when reloading shaders.md"
+    "suugu.md"
   ]
 }
