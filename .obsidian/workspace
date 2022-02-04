@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "e23f9cd5237ddb94",
+        "id": "3f660942464065e8",
         "type": "leaf",
         "state": {
           "type": "graph",
@@ -82,12 +82,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "e23f9cd5237ddb94",
+  "active": "3f660942464065e8",
   "lastOpenFiles": [
-    "deshi.md",
-    "atmos.md",
-    "go ai.md",
-    "su.md",
-    "suugu.md"
+    "completed TODOs.md",
+    "deshi/deshi time/deshi Time.md",
+    "deshi/deshi command/deshi Command.md",
+    "deshi/deshi.md",
+    "deshi/deshi window/TODO-make the transparent framebuffer a start switch since it hurts frames (it must be set at window creation time).md",
+    "deshi/deshi window/deshi Window.md",
+    "deshi/deshi window/TODO-add the ability to limit framerate.md",
+    "suugu.md",
+    "deshi/deshi's modules.md",
+    "deshi/deshi ui/TODO-add a UI popup when reloading shaders.md"
   ]
 }
