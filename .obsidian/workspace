@@ -1,0 +1,93 @@
+{
+  "main": {
+    "id": "29b84ba18dfa734f",
+    "type": "split",
+    "children": [
+      {
+        "id": "e23f9cd5237ddb94",
+        "type": "leaf",
+        "state": {
+          "type": "graph",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8e0e9265418e9ed6",
+    "type": "split",
+    "children": [
+      {
+        "id": "ad29ab56d154607b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "683f19ea2c2f2293",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "aea6277516258512",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c9d93d0010b75a31",
+    "type": "split",
+    "children": [
+      {
+        "id": "cb27ad8eeb445f8d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2bffce36c1ed0695",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "e23f9cd5237ddb94",
+  "lastOpenFiles": [
+    "deshi.md",
+    "atmos.md",
+    "go ai.md",
+    "su.md",
+    "suugu.md"
+  ]
+}
