@@ -49,7 +49,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "c9d93d0010b75a31",
@@ -84,6 +85,7 @@
   },
   "active": "3f660942464065e8",
   "lastOpenFiles": [
+    "deshi/deshi's modules.md",
     "deshi/deshi io/deshi IO.md",
     "deshi/deshi memory/deshi Memory.md",
     "completed TODOs.md",
@@ -92,7 +94,6 @@
     "deshi/deshi.md",
     "deshi/deshi window/TODO-make the transparent framebuffer a start switch since it hurts frames (it must be set at window creation time).md",
     "deshi/deshi window/deshi Window.md",
-    "deshi/deshi window/TODO-add the ability to limit framerate.md",
-    "suugu.md"
+    "deshi/deshi window/TODO-add the ability to limit framerate.md"
   ]
 }
