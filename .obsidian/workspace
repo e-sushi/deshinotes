@@ -7,8 +7,12 @@
         "id": "3f660942464065e8",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "deshi/deshi logger/deshi Logger.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "deshi/deshi logger/deshi Logger.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,6 +89,8 @@
   },
   "active": "3f660942464065e8",
   "lastOpenFiles": [
+    "deshi/deshi logger/deshi Logger.md",
+    "deshi/deshi logger/TODO-add push and pop indentation level.md",
     "conflict-files-obsidian-git.md",
     "deshi/deshi memory/deshi Memory.md",
     "deshi/deshi io/deshi IO.md",
@@ -91,8 +98,6 @@
     "deshi/deshi time/deshi Time.md",
     "deshi/deshi command/deshi Command.md",
     "deshi/deshi.md",
-    "deshi/deshi window/TODO-make the transparent framebuffer a start switch since it hurts frames (it must be set at window creation time).md",
-    "deshi/deshi window/deshi Window.md",
-    "deshi/deshi window/TODO-add the ability to limit framerate.md"
+    "deshi/deshi window/TODO-make the transparent framebuffer a start switch since it hurts frames (it must be set at window creation time).md"
   ]
 }
