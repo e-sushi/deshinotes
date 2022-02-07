@@ -7,12 +7,8 @@
         "id": "3f660942464065e8",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "deshi/deshi memory/deshi Memory.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "deshi/deshi memory/deshi Memory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,8 +84,8 @@
   },
   "active": "3f660942464065e8",
   "lastOpenFiles": [
-    "deshi/deshi memory/deshi Memory.md",
     "conflict-files-obsidian-git.md",
+    "deshi/deshi memory/deshi Memory.md",
     "deshi/deshi io/deshi IO.md",
     "completed TODOs.md",
     "deshi/deshi time/deshi Time.md",
