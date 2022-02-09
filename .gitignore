@@ -5,3 +5,5 @@
 .obsidian/graph.json
 .obsidian/hotkeys.json
 .obsidian/workspace
+output/
+config.yml
