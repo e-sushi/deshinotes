@@ -1,0 +1,21 @@
+[submodule "repos/fukushi"]
+	path = repos/fukushi
+	url = https://github.com/sellesoft/fukushi.git
+[submodule "repos/deshi"]
+	path = repos/deshi
+	url = https://github.com/sellesoft/deshi.git
+[submodule "repos/kigu"]
+	path = repos/kigu
+	url = https://github.com/sellesoft/kigu.git
+[submodule "repos/atmos"]
+	path = repos/atmos
+	url = https://github.com/sellesoft/atmos.git
+[submodule "repos/suugu"]
+	path = repos/suugu
+	url = https://github.com/sellesoft/suugu.git
+[submodule "repos/webpage"]
+	path = repos/webpage
+	url = https://github.com/sellesoft/sellesoft.github.io.git
+[submodule "repos/go"]
+	path = repos/go
+	url = https://github.com/sellesoft/go.git
