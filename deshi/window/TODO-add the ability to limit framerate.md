@@ -1,5 +1,0 @@
----
-tags: window, TODO
----
----
-[[Window]]

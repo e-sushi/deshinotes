@@ -1,5 +1,0 @@
----
-tags: logger, TODO
----
----
-[[Logger]]

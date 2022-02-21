@@ -1,5 +1,0 @@
----
-tags: math, TODO
----
----
-[[Math]]

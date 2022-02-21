@@ -5,6 +5,8 @@ tags: deshi, module
 ---
 the ui system for deshi. 
 
+This system relies on [[Renderer]] and [[Memory]] to be loaded
+
 The interface is based entirely around starting a window, adding items to it, then ending it.
 In order to use the interface you must `#include "ui.h"`, located in deshi/core/, where ever you plan to use it.
 
