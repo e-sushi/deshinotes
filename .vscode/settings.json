@@ -7,5 +7,7 @@
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.suggest.showSnippets": true,
     "editor.tabCompletion": "on",
-    "markdown-preview-enhanced.scrollSync": false
+    "markdown-preview-enhanced.scrollSync": false,
+    "markdown-preview-enhanced.enableWikiLinkSyntax": true,
+    "markdown-preview-enhanced.wikiLinkFileExtension": ".md"
 }

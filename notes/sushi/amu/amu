@@ -1,0 +1,156 @@
+------------------------------------------------------------------------------------------------------------------------------------------------------
+@index
+------------------------------------------------------------------------------------------------------------------------------------------------------
+a section starts with "@<name>" and ends with "#<name>"
+------------------------------------------------------------------------------------------------------------------------------------------------------
+index
+declarations
+variables 
+functions 
+structures 
+namespaces 
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+@declarations
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+[11/04/22] ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [11/04/22] 
+
+A declaration is what amu is made up of. Anything that is made in the global space (not inside {}) must be a declaration. The current delclarations I
+have in mind are 
+
+variables
+functions
+structures
+namespaces
+
+Notes for these are in their sections.
+
+A declaration in the global space is accessible anywhere else in the global space, even before where it is declared.
+
+When importing an amu file (also called a module) you are telling the compiler to take all the declarations in that file's global space and put them
+whereever the import is being used. For example, if we have 
+```
+    // A.amu
+    A : struct {}
+    funcA() : void {}
+```
+and 
+```
+    // B.amu
+    #import "A.amu"
+    B : struct {}
+    funcB() : void {}
+```
+then B.amu is basically equivalent to
+```
+    A : struct {}
+    funcA() : void {}
+    B : struct {}
+    funcB() : void {}
+```
+this also works anywhere else you can declare things, for example
+```
+main() : s32 {
+    #include "B.amu"
+}
+```
+is equivalent to 
+```
+main() : s32 {
+    A : struct {}
+    funcA() : void {}
+    B : struct {}
+    funcB() : void {}
+}
+```
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+@variables
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+[11/04/22] ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [11/04/22] 
+
+Variables represent a typed value. They are created by specifying their name, then a colon, then their type.
+```
+a : u32;
+```
+This creates a variable named "a" of type "u32," an unsigned 32 bit integer.
+
+Variables are always a copy of whatever they are set to. For example doing 
+```
+a : u32 = 10;
+b := a;
+b += 2;
+```
+does not cause a to equal 12, but b will instead. References are handled by pointers.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+@functions
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+[11/04/22] ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [11/04/22] 
+
+Functions define a block of code that is ran when it is called. 
+
+Syntax:
+```
+name() : type {
+    //...
+}
+```
+with arguments:
+```
+name(arg1:type, arg2:type, ...) : type {
+    //...
+}
+```
+inside another function:
+```
+name1() : type {
+    name2() : type {
+        //...
+    }
+}
+```
+------------------------------------------------------------------------------------------------------------------------------------------------------
+@structures
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+[11/04/22] ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [11/04/22] 
+
+Structures are collections of declarations that act as a type. So, any declaration that uses a type may use a structure as that type.
+
+Syntax:
+```
+    A : struct {
+        // other declarations
+    }
+```
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+@namespaces
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+[11/04/22] ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [11/04/22] 
+
+Namespaces are collections of declarations, but unlike structures, they do not act as a type. Namespaces are meant solely for organization and
+avoiding naming conflicts.
+
+Syntax:
+```
+A : namespace {
+    a := 1;
+    // other declarations
+}
+```
+in order to use something from a namespace, you access its declarations in the same way you access members of a struct:
+```
+main() : s32 {
+    A.a = 2;
+}
+```
