@@ -1,0 +1,8 @@
+[22/11/11]
+* I need to figure out how I can optimize ui's update
+* only do ui tree walking when we need to, if ever
+* I was going to make an example for making a custom item for ui, but I don't like how much there is to it
+  I need to find a better way to uniquely identify these things, there HAS To be a way
+  
+ * In suugu, I've added a way to represent units that I'm happy with so far, but I'm not sure how to approach
+   metric prefixes and a bunch of other things still
