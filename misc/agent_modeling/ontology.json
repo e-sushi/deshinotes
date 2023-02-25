@@ -168,31 +168,24 @@
                 "not":{"instance of": "carnivore"}
             }
         },
-        "actions":{
-            "pick up":{
-                "time": "1 second",
-                "reqs":{
-                    "has":{
-                        "manipulator":{
-                            "has": null
-                        }
-                    }
-                }
-            }
-        },
+        "actions":{},
         "objects":{
             "apple":{
                 "adverts":{
                     "eat":{
                         "action":{
-                            "time": "10 minutes",
+                            "time":{
+                                "minutes": 10
+                            },
                             "costs":{
                                 "food": 0.1
                             },
-                            "reqs": ":inherit:"
+                            "reqs":{
+                                "has":{ "mouth":{ "has": null } },
+                                "not":{"instance of": "carnivore"}
+                            }
                         }
-                    },
-                    "pick up":{"action":"template(pick up)"}
+                    }
                 }
             },
             "hand":{
@@ -207,24 +200,43 @@
                 "adverts":{
                     "spit":{
                         "action":{
-                            "time": "1 second",
+                            "time": {
+                                "seconds": 1
+                            },
                             "reqs":{
                                 "has":{
                                     "mouth":{
                                         "has": "any(object)"
                                     }
-                                }
+                                },
+                                "belongs to": "something idk"
                             }
                         }
                     }
                 }
             },
+            "bed":{
+                "adverts":{
+                    "sleep":{
+                        "action":{
+                            "time":{
+                                "hours": 7
+                            },
+                            "costs":{
+                                "sleep": 1
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "agents":{
             "human":{
                 "predicates":{
                     "has":{
-                        "left hand": "template(hand)",
-                        "right hand": "template(hand)", 
-                        "mouth": "template(mouth)"
+                        "left hand": "object(hand)", 
+                        "right hand": "object(hand)", 
+                        "mouth": "object(mouth)"
                     }
                 }
             }
@@ -282,6 +294,7 @@
             }
         },
         "work":{
+            "desc": "to do a specific task.",
             "present":{
                 "singular":{
                     "first,second": "work",
@@ -294,6 +307,9 @@
                 "present": "working",
                 "past": "worked"
             }
+        },
+        "take":{
+
         }
     }
 }
